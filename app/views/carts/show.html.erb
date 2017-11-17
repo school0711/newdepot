@@ -33,4 +33,8 @@
 </tbody>
 </table>
 <%= button_to 'Empty cart', @cart, method: :delete, data: { confirm: 'Are you sure?' }, class:"w3-button w3-light-gray w3-border" %>
-<%= link_to 'Keep Shopping', store_index_url , class:"w3-button w3-light-gray w3-border" %></div>
+<%= link_to 'Keep Shopping', store_index_url , class:"w3-button w3-light-gray w3-border" %>
+
+<%= button_to "Checkout", new_order_path, method: :get %>
+
+<%= button_to 'Empty cart', cart, method: :delete, data: { confirm: 'Are you sure?' } %> </div>
