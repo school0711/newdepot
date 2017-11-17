@@ -1,10 +1,11 @@
 class StaticPagesController < ApplicationController
-  def home
-  end
+  skip_before_action :authorize
+   def home
+   end
 
-  def help
-  end
+   def help
+   end
 
-  def about
-  end
+   def about
+   end
 end
